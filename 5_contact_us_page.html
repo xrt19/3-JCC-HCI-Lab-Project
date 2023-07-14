@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link with css -->
+    <link rel="stylesheet" href="5_contact_us_page.css" />
+    <!-- link font header & footer -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <!-- link font body -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <title>Contact Us Page</title>
+    <!-- link with js -->
+    <script src="5_contact_us_page.js" defer></script>
+</head>
+<body>
+    <!-- checked -->
+    <header>
+        <a href="1_home_page.html">
+            <div class="logo-jcc">
+                Jockey’s <br>
+                Conference <br>
+                Center
+            </div>
+        </a>
+        <div>
+            <ul>
+                <li class="right"><a class="right-link"  href="1_home_page.html">Home</a></li>
+                <li class="right"><a class="right-link"  href="2_events_page.html">Events</a></li>
+                <li class="right"><a class="right-link"  href="3_offers_page.html">Offers</a></li>
+                <li class="right"><a class="right-link"  href="4_about_us_page.html">About Us</a></li>
+                <li class="right"><a class="right-link" id="khusus-contact-us-page" href="5_contact_us_page.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="background-1">
+            <div class="background-image">
+                <div class="container-1 background-text">
+                        Get in Touch Today!
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1">
+            <h1>
+                Get in Touch Today!
+            </h1>
+        </div>
+
+        <div class="container-1">
+            <div class="font-1">
+                Please take a moment to fill out the inquiry form below, and we will ensure a swift response. 
+                <br>
+                Your message is eagerly anticipated!
+            </div>
+        </div>
+
+        <div class="container-1">
+            <div class="kotak-putih">
+                <form action="" method="get" id="registForm" 
+                onsubmit="validateForm(event)">
+                
+                    <input type="radio" name="salutation" id="mr" required>
+                    <label class="salutation" for="Mr">Mr</label>
+                    <input type="radio" name="salutation" id="mrs" required>
+                    <label class="salutation" for="Mrs">Mrs</label>
+                    <input type="radio" name="salutation" id="ms" required>
+                    <label class="salutation" for="Ms">Ms</label>
+                    <input type="radio" name="salutation" id="dr" required>
+                    <label class="salutation" for="Dr">Dr</label>
+                    <input type="radio" name="salutation" id="prof" required>
+                    <label class="salutation" for="Prof">Prof</label>
+                    <br>
+        
+                    
+                    <label class="text-form" for="name">Name<sup>*</sup></label> <br>
+                    <input class="input-form box-name" type="text" name="name" id="name" required>
+                    <br>
+                    <h4 id="error-name"></h4>
+        
+                    <label class="text-form" for="email">Email Address<sup>*</sup></label> <br>
+                    <input class="input-form box-email" type="email" name="email" id="email" required>
+                    <br>
+                    <h4 id="error-mail"></h4>
+        
+                    <label class="text-form" for="contact-number">Contact Number<sup>*</sup></label> <br>
+                    <input class="input-form box-contact" type="text" name="contact-number" id="contact-number" required>
+                    <br>
+                    <h4 id="error-contact1"></h4>
+                    <h4 id="error-contact2"></h4>
+        
+                    <label class="text-form" for="prefer-method">
+                        I would appreciate communication through my preferred mode<sup>*</sup><br>
+                    </label>
+        
+                    <select class="box-prefer input-form" id="prefer-method" name="prefer-method" required>
+                        <option class="box-prefer input-form" value="">Select an option</option>
+                        <option class="box-prefer input-form" value="by-email">By Email</option>
+                        <option class="box-prefer input-form" value="by-phone">By Phone</option>
+                    </select>
+                    <br>
+        
+                    <label class="text-form" for="comments">Comments<sup>*</sup></label> <br>
+                    <textarea class="input-form box-comment" type="text" name="comments" id="comments" required>
+                    </textarea>
+                    <br>
+                    <h4 id="error-comments"></h4>
+
+                    <button class="submit-button" type="submit">Submit</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-atas">
+            <a href="1_home_page.html">
+                <div class="logo-jcc-footer">
+                    Jockey’s <br>
+                    Conference <br>
+                    Center
+                </div>
+            </a>
+    
+            <div class="contact-address">
+                <span class="contact-address-bold">T</span>
+                : +62 21 2907 1990 <br>
+                <span class="contact-address-bold">M</span>
+                : jockey.marketing@jcc.com <br>
+                Batavia Road, Jakarta, Indonesia, 10110
+            </div>
+    
+            <div>
+                <div class="tulisan-exclusive">
+                    Exclusive Partner
+                </div>
+                <div class="supaya-center">
+                    <a href="https://www.cimbniaga.co.id/id/personal/index" target="_blank"><img class="logo-cimb" src="z_0_logo cimb niaga.svg.png"  alt="source not found"></a>
+                </div>
+                
+            </div>
+    
+            <div class="connect-with-us">
+                <div>
+                    <b>CONNECT WITH US</b>
+                </div>
+                <div class="supaya-center">
+                    <img class="size-logo-connect" src="z_0_logo ig.png" alt="source not found">
+                    <img class="size-logo-connect" src="z_0_logo twitter.png" alt="source not found">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <hr>
+            Copyright © 2023. JCC Group.
+        </div>
+    </footer>
+</body>
+</html>
